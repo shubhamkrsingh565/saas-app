@@ -1,14 +1,14 @@
-import CompanionCard from '@/components/CompanionCard'
-import CompanionsList from '@/components/CompanionsList'
-import CTA from '@/components/CTA'
-import { recentSessions } from '@/constants'
-import React from 'react'
-
+import CompanionCard from "@/components/CompanionCard";
+import CompanionsList from "@/components/CompanionsList";
+import CTA from "@/components/CTA";
+import { recentSessions } from "@/constants";
+import React from "react";
+// pHlnxPAR5wYAfKMH
 const Page = () => {
   return (
     <main>
-      <h1 className='text-2xl'>Popular Companions</h1>
-      <section className='home-section'>
+      <h1 className="text-2xl">Popular Companions</h1>
+      <section className="home-section">
         <CompanionCard
           id="123"
           name="Neura the Brainy Explorer"
@@ -35,16 +35,16 @@ const Page = () => {
         />
       </section>
 
-      <section className='home-section'>
+      <section className="home-section">
         <CompanionsList
           title="Recent completed sessions"
           companions={recentSessions}
           classNames="w-2/3 max-lg:w-full"
         />
-        <CTA/>
+        <CTA />
       </section>
     </main>
-  )
-}
+  );
+};
 
-export default Page
+export default Page;
