@@ -22,7 +22,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { subjects } from "@/constants";
 import { Textarea } from "./ui/textarea";
-import { createConpanion } from "@/lib/actions/companion.action";
+import { createConpanion } from "@/lib/actions/companion.actions";
 import { redirect } from "next/navigation";
 
 const formSchema = z.object({
